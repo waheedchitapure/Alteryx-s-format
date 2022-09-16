@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Use Cases to Help Tax Professionals Take Back Their Time
+  </title>
+  <link rel="stylesheet" href="https://resources.pangeaglobalservices.com/whitepapers/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://resources.pangeaglobalservices.com/whitepapers/css/landing.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://jqueryvalidation.org/files/lib/jquery.js"></script>
+  <script src="https://jqueryvalidation.org/files/dist/jquery.validate.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+      $.validator.addMethod('nofreeemail', function (value) {
+        return /^([\w-.]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)(?!facebook\.com)(?!gmail\.com)(?!gmx\.com)(?!googlemail\.com)(?!hotmail\.com)(?!mac\.com)(?!me\.com)(?!mail\.com)(?!msn\.com)(?!yahoo\.com)(?!aol\.com)(?!google\.com)(?!live\.com)(?!att\.net)(?!comcast\.net)(?!sbcglobal\.net)(?!verizon\.net)([\w-]+.)+[\w-]{2,4})?$/.test(value);
+      }, 'Free email addresses are not allowed.');
+
+      // validate signup form on keyup and submit
+      $("#signup_form").validate({
+        errorElement: 'span',
+        rules: {
+          firstname: {
+            required: true,
+          },
+          lastname: {
+            required: true,
+          },
+          company: {
+            required: true,
+          },
+          job_function: {
+            required: true,
+          },
+          email: {
+            required: true,
+            nofreeemail: true,
+            email: true
+          },
+          work_phone: {
+            required: true,
+            number: true
+          },
+          city: {
+            required: true,
+          },
+          state: {
+            required: true,
+          },
+          zip: {
+            required: true,
+          },
+          country: {
+            required: true,
+          },
+          Industry: {
+            required: true,
+          },
+          address_street1: {
+            required: true,
+          },
+          std1: {
+            required: true,
+          },
+          std2: {
+            required: true,
+          },
+          std3: {
+            required: true,
+          },
+          std4: {
+            required: true,
+          },
+          std5: {
+            required: true,
+          },
+          std6: {
+            required: true,
+          },
+          camp_id: {
+            required: true,
+          },
+          camp_code: {
+            required: true,
+          },
+          std7: {
+            required: true,
+          }
+        },
+        messages: {
+          firstname: {
+            required: "This field is required."
+          },
+          lastname: {
+            required: "The details are incorrect/incomplete"
+          },
+          company: {
+            required: "The details are incorrect/incomplete"
+          },
+          job_function: {
+            required: "The details are incorrect/incomplete"
+          },
+          email: {
+            required: "Please enter an email address",
+                     < !--nofreeemail: "Please enter your business email, generic email not allowed", -- >
+          email: "Please enter a valid email address"
+                   },
+        work_phone: {
+        required: "The details are incorrect/incomplete",
+        number: "Phone number must contain digits only"
+      },
+        city: {
+        required: "The details are incorrect/incomplete"
+      },
+        state: {
+        required: "The details are incorrect/incomplete"
+      },
+        country: {
+        required: "The details are incorrect/incomplete"
+      },
+        Industry: {
+        required: "The details are incorrect/incomplete"
+      },
+        zip: {
+        required: "The details are incorrect/incomplete",
+        number: "Zip code must contain digits only",
+        rangelength: "Zip code must have between 3 to 5 digits"
+      },
+        address_street1: {
+        required: "The details are incorrect/incomplete"
+      },
+        std1: {
+        required: "The details are incorrect/incomplete"
+      },
+        std2: {
+        required: "The details are incorrect/incomplete"
+      },
+        std3: {
+        required: "The details are incorrect/incomplete"
+      },
+        std4: {
+        required: "The details are incorrect/incomplete"
+      },
+        std5: {
+        required: "The details are incorrect/incomplete"
+      },
+        std6: {
+        required: "The details are incorrect/incomplete"
+      },
+        camp_id: {
+        required: "The details are incorrect/incomplete"
+      },
+        camp_code: {
+        required: "The details are incorrect/incomplete"
+      },
+        std7: {
+        required: "The details are incorrect/incomplete"
+      }
+                 }
+               });
+         });
+
+
+    function CheckCountry(val) {
+      var element = document.getElementById('State');
+
+      if (val == 'Poland')
+        element.style.display = 'block';
+      else
+        element.style.display = 'none';
+    }
+  </script>
+  <style>
+    @media (min-width: 992px) {
+      .container {
+        width: 950px;
+      }
+    }
+  </style>
+</head>
+
+<body style="background-color: #E7E7E8;">
+  <div class="container" style="width: ">
+    <div class="row" style="background-color: #E7E7E8; margin-right: 0px;">
+      <div class="col-md-6" style="margin-left: 20px;margin-top: 5px;">
+        <!--SPONSER LOGO START-->
+        <img src="./logo.png
+               " alt="" style="width: 37%;padding-top: 1px;padding-bottom: 1px;" class="img-responsive" />
+        <!--SPONSER LOGO END-->
+      </div>
+    </div>
+    <header style="background-color: #1969A0;color:#fff;padding: 2%;">
+      <div class="span12 center">
+        <center>
+          <!--TITLE START-->
+          <p style="font-size: 30px; color: white; font-weight: ; padding-top: 10px; font-family: Arial, sans-serif;">5
+            Use Cases to Help Tax Professionals Take Back Their Time
+          </p>
+          <p style="font-size: 20px; color: white; font-weight: ; padding-top: 10px; font-family: Arial, sans-serif;">
+            Tired of wasting time in spreadsheets? Get the e-book and see five tax processes you can streamline with
+            modern tech to save time and rework.</p>
+          <!--TITLE END-->
+        </center>
+      </div>
+    </header>
+    <div class="panel">
+      <div class="panel-body" style="background-color: white;padding-bottom: -9%;">
+        <div style="padding: -8%;">
+          <div class="col-md-7">
+            <center>
+              <!--ABSTRACT START HERE--><br><br>
+              <img src="./img.png " class="img-responsive" width="" style=" border:solid; border-width:1px;">
+              <!-- <p style="width: 100%;font-size:16px;text-align: left;color:#333333;font-family: Arial, Helvetica, sans-serif;line-height: 23px;"><i>You're reading Entrepreneur United States, an international franchise of Entrepreneur Media. </i>
+                        <br/> --><br><br>
+              <p
+                style="width: 90%;font-size:16px;text-align: justify;color:#333333;font-family: Arial, Helvetica, sans-serif;line-height: 23px;">
+                With the increasing amount of data tax professionals use, it’s hard for spreadsheets to keep up.<br><br>
+
+                Don’t let spreadsheets slow you down. Explore how analytics tech is helping tax professionals save
+                hundreds of hours while increasing accuracy.<br><br>
+
+                Get the e-book and see how to modernize these five processes and take back your time:<br><br>
+
+              </p>
+              <ul
+                style="width: 90%;font-size:16px;text-align: justify;color:#333333;font-family: Arial, Helvetica, sans-serif;line-height: 23px;">
+                <li>Tax apportionment</li>
+                <li>Accrual automation</li>
+                <li>Sales and use tax reporting</li>
+                <li>Fixed asset depreciation</li>
+                <li>Transfer pricing</li>
+              </ul>
+              <p
+                style="width: 90%;font-size:16px;text-align: justify;color:#333333;font-family: Arial, Helvetica, sans-serif;line-height: 23px;">
+                Download your copy so you can deliver on time and get back to more meaningful analyses.</p>
+
+            </center>
+          </div>
+          <div class="col-md-5" style="">
+            <form action="./sendmail.php" id="signup_form" method="post" class="validate" style="">
+              <!--XXX ... DON'T CHANGE THIS CODE ... XXX-->
+              <input type="hidden" name="camp_type" id="camp_type" value="whitepaper" />
+              <input type="hidden" name="camp_id" id="camp_id" value="21CEC1-Alteryx-INDIA-Finance-Tax" />
+              <input type="hidden" name="camp_name" value="21CEC1-Alteryx-INDIA-Finance-Tax" />
+              <input type="hidden" name="asset_title"
+                value="5 Use Cases to Help Tax Professionals Take Back Their Time" />
+              <input type="hidden" name="thumbnail" value="./img.png " />
+              <!--XXX ... DON'T CHANGE THIS CODE ... XXX-->
+              <center>
+                <strong>
+                  <!-- <h3 style="color: black;text-align:left ; padding: 0px;"><br>Overcome IT Operetions Management Challanges with AIOps<br></h3> -->
+                  <h5 style="color: black;text-align:left ; padding: 26px;">Please fill out the form to download </h5>
+                  <br>
+                </strong>
+
+
+                <!-- -----------------------------------------------------
+                        This is Two input box in one line
+                        - both inputs box have width 45%.
+                        - copy input-group div
+                ----------------------------------------------------- ---------------- -->
+                <div class="input-group ">
+
+                  <input style="width:45%;margin-right: 17px; " class="form-control " placeholder="first name"
+                    name="firstname" type="text" />
+                  <input style="width:45% " class="form-control " placeholder="lastname" name="lastname" type="text" />
+                </div>
+                <br>
+
+
+                <div class="col-md-12" style="padding-left: 0px;  padding-right: 40">
+                  <input id="firstname" name="data[1]" type="email" value="" class="form-control" placeholder="Email"
+                    required="required" style="    margin-bottom: 5px;" />
+                </div>
+                <br> <br> <br>
+                <div class="col-md-12" style="padding-left: 0px;  padding-right: 40">
+                  <input id="firstname" name="data[2]" type="text" value="" class="form-control" placeholder="Company"
+                    required="required" style="    margin-bottom: 5px;" />
+                </div>
+                <br><br> <br>
+                <div class="col-md-12" style="padding-left: 0px;  padding-right: 40">
+                  <select name="data[3]" id="department" class="form-control" required="required">
+                    <option value="">Country</option>
+                    <option value="India">India</option>
+                  </select>
+                </div>
+                <br> <br> <br>
+                <div class="input-group">
+
+
+                  <input style="width:45%;margin-right: 17px; " class="form-control " placeholder="State" name="State"
+                    type="text" />
+                  <input style="width:45% " class="form-control " placeholder="Postal" name="Postal" type="text" />
+
+
+
+
+
+                </div>
+                <br />
+                <div class="input-group">
+
+
+                  <input style="width:45%;margin-right: 17px; " class="form-control " placeholder="Job Title"
+                    name="data[7]" type="text" />
+
+
+                  <select style="width:45%;" name="data[7]" id="job_title" class="form-control" required="required">
+                    <option value="">Function</option>
+                    <option value="BI/Analytics">BI/Analytics</option>
+                    <option value="Finance: FP&A">Finance: FP&A</option>
+                    <option value="Finance: Other">Finance: Other</option>
+                    <option value="Finance: Tax">Finance: Tax</option>
+
+                  </select>
+
+
+
+
+                </div>
+                <br />
+
+                <br />
+
+                <div class="input-group">
+
+                  <select style="width:45%; margin-right: 17px;" name="data[8]" id="country" class="form-control"
+                    required="required ">
+                    <option value="">Company Size</option>
+                    <option value="200"> 200</option>
+                    <option value="201 - 500">201 - 500</option>
+                    <option value="501 - 1000">501 - 1000</option>
+                    <option value="1001 - 5000">1001 - 5000</option>
+                    <option value="5001 - 10,000">5001 - 10,000</option>
+                    <option value="10,000 - 20,000">10,000 - 20,000</option>
+                    <option value="20,000+">20,000+</option>
+
+                  </select>
+
+
+
+                  <select style="width:45%;" name="data[9]" id="industry" class="form-control" required="required ">
+                    <option value="">Annual Revenue</option>
+                    <option value="$500M - $750M">$500M - $750M</option>
+                    <option value="$750M - $1B">$750M - $1B</option>
+                    <option value="$1B - $2B">$1B - $2B</option>
+                    <option value="$2B+">$2B+</option>
+
+                  </select>
+                </div>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <p style="text-align: left;"><input type="checkBox" name="data[10]" style="width: 13px; height: 13px;">
+            Sign me up to receive updates and offers from Alteryx and its partners. I can opt out at any time. By
+            submitting this form, I agree to Alteryx's <a href="https://www.alteryx.com/privacy">Privacy Policy </a> and
+            terms of service.
+          </p>
+        </div>
+        <br>
+        <div class="row" style="text-align: left;">
+          <center><button type="submit" id="submit_button" name="submit" class="btn btn-primary"
+              style="background-color:#0d64b0 ; color:white;padding: ;width: 90%;font-weight: bold ;">Download
+              Now</button></center>
+        </div>
+        </center>
+        <br>
+        <br><br><br>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  </div>
+  <footer style="background-color:#00344f; color: white; padding:25px;">
+    <div class="span12 center">
+      <br>
+      <p align="center" style=" font-size: 13px; ">Copyright &copy; Pangea Global Services, Inc. | <a
+          href="https://www.pangeaglobalservices.com/unsubscribe/" target="_blank">Click here to unsubscribe</a> | <a
+          href="https://pangeaglobalservices.com/privacy-policy/" target="_blank">Privacy Policy</a></p>
+      <p align="left" style=" font-size: 13px; ">
+    </div>
+    </div>
+  </footer>
+  </div>
+</body>
+
+</html>
